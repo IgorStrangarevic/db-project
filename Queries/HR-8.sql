@@ -30,4 +30,25 @@ INSERT INTO SCRUMTEAM_IGOR VALUES (2, 'Harold', 'Finch', 'Developer');
 INSERT INTO SCRUMTEAM_IGOR VALUES (3, 'Mirko', 'Fodor', 'Developer');
 INSERT INTO SCRUMTEAM_IGOR VALUES (4, 'Halid', 'Beslic', 'Developer');
 
+--how to update data
+/*
+UPDATE table_name
+SET column1 = value1,
+column2 = value2 , ...
+WHERE condition;
+*/
 
+UPDATE SCRUMTEAM_IGOR
+SET JOBTITLE ='Tester'
+WHERE EMP_ID = 4;
+
+--Delete from table
+/*
+DELETE FROM table_name
+WHERE condition;
+*/
+
+DELETE FROM SCRUMTEAM_IGOR
+WHERE EMP_ID = 3;
+
+COMMIT;
