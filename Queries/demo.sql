@@ -1,0 +1,30 @@
+SELECT * FROM EMPLOYEES;
+--reads all column from employees table
+
+select * from DEPARTMENTS;
+--reads all column from department table
+
+select FIRST_NAME from EMPLOYEES;
+--get only first name from employees table
+
+
+
+--display city names
+SELECT CITY FROM LOCATIONS;
+
+--GET ME FIRST_NAME, LAST_NAME AND SALARY
+SELECT FIRST_NAME, LAST_NAME, SALARY FROM EMPLOYEES;
+
+--GET ME STREET ADDRESS AND POSTAL CODE
+SELECT STREET_ADDRESS, POSTAL_CODE FROM LOCATIONS;
+
+--REMOVE DUPLICATES WITH DISTINCT COMMAND
+SELECT DISTINCT FIRST_NAME FROM EMPLOYEES;
+
+
+
+
+
+
+
+
