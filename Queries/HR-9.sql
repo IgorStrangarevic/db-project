@@ -1,4 +1,4 @@
-SELECT * FROM SCRUMTEAM_IGOR;
+SELECT * FROM agileteam_Igor;
 
 --adding new column
 ALTER TABLE SCRUMTEAM_IGOR ADD Salary INTEGER;
@@ -13,3 +13,15 @@ ALTER TABLE SCRUMTEAM_IGOR RENAME COLUMN Fistname TO Firstname;
 
 --delete, drop column
 ALTER TABLE SCRUMTEAM_IGOR DROP COLUMN SALARY;
+
+--how to change table name
+ALTER TABLE SCRUMTEAM_IGOR RENAME TO agileteam_Igor;
+
+COMMIT;
+
+--truncate, if we want to delete all data from the table, but still keep the table structure , we use truncate
+TRUNCATE TABLE AGILETEAM_IGOR;
+
+--If we want to delete the table and data together
+DROP TABLE AGILETEAM_IGOR;
+
